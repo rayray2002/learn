@@ -2,10 +2,10 @@
  
 Servo spin, claw, x, y;
 
-int y_low = 20;
-int y_high = 180;
-int claw_open = 170;
-int claw_close = 180;
+int y_low = 0;
+int y_high = 30;
+int claw_open = 0;
+int claw_close = 30;
 
 void setup() { 
   spin.attach(7);
@@ -15,18 +15,18 @@ void setup() {
 } 
  
 void loop() {
-  y.write(y_low);//low
   for (int i = 0; i<190; i++) {
     spin.write(i);
     delay(30);
   }
+  y.write(y_low);//low
   for (int i = 0; i<3; i++) {
     claw.write(claw_close);//close
     delay(200);
     claw.write(claw_open);//open
     delay(200);
   }
-  delay(1000);
+  delay(3000);
   claw.write(claw_close);//close
   delay(100);
   y.write(y_high);//high
