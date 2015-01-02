@@ -12,7 +12,18 @@ void setup() {
   claw.attach(8);
   x.attach(9);
   y.attach(10);
-} 
+}
+
+void move_servo(Servo s, int deg) {
+  int current = s.read();
+  int diff = deg - current;
+  byte step = diff / abs(diff);
+  while (current!=deg) {
+      s.write(current+step);
+      delay(20);
+      current = s.read();
+  }
+}
  
 void loop() {
   
