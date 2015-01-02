@@ -2,8 +2,8 @@
  
 Servo spin, claw, x, y;
 
-int y_low = 0;
-int y_high = 30;
+int y_low = 180;
+int y_high = 180;
 int claw_open = 0;
 int claw_close = 30;
 
