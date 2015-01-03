@@ -24,8 +24,12 @@ void move_servo(Servo s, int deg) {
       current = s.read();
   }
 }
- 
+
 void loop() {
+  spin.write(0);
+  move_servo(spin, 90);
+}
+/*void loop() {
   
   for (int i = 0; i<90; i++) {
     spin.write(i);
@@ -60,4 +64,5 @@ void loop() {
   
   claw.write(claw_open);//open
   delay(500);
-} 
+} */
+
