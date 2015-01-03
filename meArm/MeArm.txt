@@ -1,6 +1,8 @@
 MeArm介紹
 
-         這是一台叫做MeArm的袖珍型機械手臂，是一位叫做Benjamin Gray的人在2013年二月在kickstarter發表的，他在不到一年便風雲全球，在全球都可看見他的身影。因為它的尺寸很小，所以自由度很高，也可以做很多的變化，而且他操作簡單，只有四顆伺服馬達，所以大多數人都做得出來，也增加了許多娛樂性。原先作者是設計給arduino uno的，但許多人也有在Raspberry Pi, Espruino, s4a等平台使用，另外，作者還有設計一個叫MeArm.joystick的arduino搖桿模組來給大家使用。
+         這是一台叫做MeArm的袖珍型機械手臂，是一位叫做Benjamin Gray的人在2013年二月在kickstarter發表的，他在不到一年便風雲全球，在全球都可看見他的身影。因為它的尺寸很小
+，所以自由度很高，也可以做很多的變化，而且他操作簡單，只有四顆伺服馬達，所以大多數人都做得出來，也增加了許多娛樂性。原先作者是設計給arduino uno的，但許多人也有在
+Raspberry Pi, Espruino, s4a等平台使用，另外，作者還有設計一個叫MeArm.joystick的arduino搖桿模組來給大家使用。
 
 程式介紹
 
