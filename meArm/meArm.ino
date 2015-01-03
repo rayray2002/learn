@@ -1,6 +1,6 @@
 #include <Servo.h> 
  
-Servo spin, claw, x, y;
+Servo spin, claw, y;
 
 int y_low = 50;
 int y_high = 160;
@@ -10,7 +10,6 @@ int claw_close = 30;
 void setup() { 
   spin.attach(7);
   claw.attach(8);
-  x.attach(9);
   y.attach(10);
 }
 
