@@ -18,24 +18,15 @@ void move_servo(Servo s, int deg) {
   int current = s.read();
   int diff = deg - current;
   byte step = diff / abs(diff);
-  while (current!=deg) {
+  while (current != deg) {
       s.write(current+step);
       delay(20);
       current = s.read();
   }
 }
-
 void loop() {
   spin.write(0);
   move_servo(spin, 90);
-}
-/*void loop() {
-  
-  for (int i = 0; i<90; i++) {
-    spin.write(i);
-    delay(30);
-  }
-  
   for(int i = 60; i<150; i++) {
     y.write(i);
     delay(30);
@@ -64,5 +55,5 @@ void loop() {
   
   claw.write(claw_open);//open
   delay(500);
-} */
+}
 
