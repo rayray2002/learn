@@ -1,0 +1,27 @@
+組裝說明
+
+由於他很小，所以零件也不會太多，用一張A4大小的板子就可以切割出所有零件了，大概是這樣
+ httpcdn.instructables.comFSITXXUHY4L3Q1EFSITXXUHY4L3Q1E.LARGE.jpg
+螺絲是用M3的要用到
+螺帽x 10
+6mm x 9
+8mm x 12
+10mm x 3
+12mm x 7
+20mm x 4
+最後是四個伺服馬達和四個止滑墊
+httpcdn.instructables.comFNJKCJHHY4L38CEFNJKCJHHY4L38CE.LARGE.jpg
+
+
+第一步組裝底座
+零件
+伺服馬達 x 1
+止滑墊 x 4
+20mm x 4
+8mm x 2
+螺帽x 4
+ 
+(下)將止滑墊黏上後把20mm螺絲由下而上插進洞裡並鎖上螺帽
+ 
+(下)鎖上小平台
+ 
