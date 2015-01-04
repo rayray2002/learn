@@ -24,35 +24,40 @@ void move_servo(Servo s, int deg) {
   }
 }
 void loop() {
-  spin.write(0);
-  move_servo(spin, 90);
-  for(int i = 60; i<150; i++) {
-    y.write(i);
-    delay(30);
-  }
+  spin.write(90);
+  y.write(60);
+  while(1) {
+    move_servo(spin, 90);
+    y.write(60);
+    move_servo(y, 120);
+    for(int i = 60; i<150; i++) {
+      y.write(i);
+      delay(30);
+    }
   
-  for (int i = 0; i<3; i++) {
+    for (int i = 0; i<3; i++) {
+      claw.write(claw_close);//close
+      delay(200);
+      claw.write(claw_open);//open
+      delay(200);
+    }
+    delay(2000);
+  
     claw.write(claw_close);//close
-    delay(200);
+    delay(100);
+  
+    for(int i = 90; i>1; i--) {
+      spin.write(i);
+      delay(30);
+    }
+  
+    for(int i = 150; i>60; i--) {
+      y.write(i);
+      delay(30);
+    }
+  
     claw.write(claw_open);//open
-    delay(200);
+    delay(500);
   }
-  delay(2000);
-  
-  claw.write(claw_close);//close
-  delay(100);
-  
-  for(int i = 90; i>1; i--) {
-    spin.write(i);
-    delay(30);
-  }
-  
-  for(int i = 150; i>60; i--) {
-    y.write(i);
-    delay(30);
-  }
-  
-  claw.write(claw_open);//open
-  delay(500);
 }
 
