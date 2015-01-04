@@ -28,21 +28,15 @@ void loop() {
   y.write(60);
   while(1) {
     move_servo(spin, 90);
-    y.write(60);
-    move_servo(y, 120);
-    for(int i = 60; i<150; i++) {
-      y.write(i);
-      delay(30);
-    }
-  
+    move_servo(y, 150);
+    
     for (int i = 0; i<3; i++) {
       claw.write(claw_close);//close
       delay(200);
       claw.write(claw_open);//open
       delay(200);
     }
-    delay(2000);
-  
+    delay(2000);  
     claw.write(claw_close);//close
     delay(100);
   
